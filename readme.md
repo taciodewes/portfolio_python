@@ -1,4 +1,5 @@
-﻿ # 🐍 Portfólio Python | Python Portfolio
+﻿# 🐍 Portfólio Python | Python Portfolio
+![Python Tests](https://github.com/taciodewes/portfolio_python/actions/workflows/python-tests.yml/badge.svg)
 
 Repositório com projetos de automação, análise de dados e inteligência artificial desenvolvidos em **Python**.  
 Cada projeto demonstra a aplicação prática de conceitos de **Data Science**, **Machine Learning**, **automação** e **boas práticas de engenharia de software**.
