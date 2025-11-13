@@ -43,10 +43,10 @@ Nos últimos anos, venho direcionando minha carreira para a criação de soluç�
 
 | Projeto | Descrição | Repositório |
 |----------|------------|-------------|
-| 🧾 **Automação de Planilhas** | Gera relatórios e gráficos automáticos em Excel e HTML com seleção de colunas via interface Tkinter. | [`automacao_planilhas`](./automacao_planilhas) |
-| 🤖 **Automação de Modelos de Machine Learning** | Automatiza a criação, avaliação e salvamento de modelos de ML com Python. | [`automacao_modelos_ml`](./automacao_modelos_ml) |
-| 📂 **File Organizer** | Organiza arquivos automaticamente em pastas por tipo e data. | [`automacao_arquivos_os`](./automacao_arquivos_os) |
-| 🐍 **pylogcfg** | Sistema de logging em Python com QueueHandler / QueueListener e logs em JSON lines. | [`pylogcfg`](./pylogcfg) |
+| 🧾 **Automação de Planilhas** | Gera relatórios e gráficos automáticos em Excel e HTML com seleção de colunas via interface Tkinter. | [GitHub](https://github.com/taciodewes/automacao_planilhas) |
+| 🤖 **Automação de Modelos de Machine Learning** | Automatiza a criação, avaliação e salvamento de modelos de ML com Python. | [GitHub](https://github.com/taciodewes/automacao_modelos_ml) |
+| 📂 **File Organizer** | Organiza arquivos automaticamente em pastas por tipo e data. | [GitHub](https://github.com/taciodewes/automacao_arquivos_os) |
+| 🐍 **pylogcfg** | Sistema de logging em Python com QueueHandler / QueueListener e logs em JSON lines. | [GitHub](https://github.com/taciodewes/pylogcfg) |
 
 *(Novos projetos serão adicionados aqui conforme publicados.)*
 
