@@ -1,0 +1,12 @@
+[submodule "pylogcfg"]
+	path = pylogcfg
+	url = https://github.com/taciodewes/pylogcfg.git
+[submodule "automacao_arquivos_os"]
+	path = automacao_arquivos_os
+	url = https://github.com/taciodewes/automacao_arquivos_os.git
+[submodule "automacao_modelos_ml"]
+	path = automacao_modelos_ml
+	url = https://github.com/taciodewes/automacao_modelos_ml.git
+[submodule "automacao_planilhas"]
+	path = automacao_planilhas
+	url = https://github.com/taciodewes/automacao_planilhas.git
