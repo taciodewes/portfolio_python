@@ -10,15 +10,32 @@ jobs:
         python-version: [3.11, 3.12, 3.13]
     steps:
     - uses: actions/checkout@v3
+
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.python-version }}
-    - name: Install dependencies
+
+    - name: Upgrade pip
+      run: python -m pip install --upgrade pip
+
+    # Instala dependências de cada projeto (somente se o arquivo existir)
+    - name: Install dependencies for all projects
       run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-        pip install pytest coverage pytest-cov
-    - name: Run tests
+        for req in automacao_arquivos_os/requirements.txt automacao_modelos_ml/requirements.txt automacao_planilhas/requirements.txt pylogcfg/requirements.txt; do
+          if [ -f "$req" ]; then
+            echo "Installing dependencies from $req"
+            pip install -r "$req"
+          fi
+        done
+        pip install pytest pytest-cov coverage
+
+    # Executa testes dentro de cada projeto (apenas se houver pasta de testes)
+    - name: Run tests in each project
       run: |
-        pytest
+        for dir in automacao_arquivos_os automacao_modelos_ml automacao_planilhas pylogcfg; do
+          if [ -d "$dir/tests" ]; then
+            echo "Running tests in $dir"
+            pytest -v --maxfail=1 --disable-warnings "$dir/tests" || exit 1
+          fi
+        done
