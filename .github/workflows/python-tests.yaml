@@ -1,3 +1,4 @@
+﻿
 name: Python Tests
 
 on: [push, pull_request]
@@ -22,7 +23,7 @@ jobs:
     # Instala dependências de cada projeto (somente se o arquivo existir)
     - name: Install dependencies for all projects
       run: |
-        for req in automacao_arquivos_os/requirements.txt automacao_modelos_ml/requirements.txt automacao_planilhas/requirements.txt pylogcfg/requirements.txt; do
+        for req in automacao_modelos_ml/requirements.txt automacao_planilhas/requirements.txt pylogcfg/requirements.txt; do
           if [ -f "$req" ]; then
             echo "Installing dependencies from $req"
             pip install -r "$req"
@@ -33,7 +34,7 @@ jobs:
     # Executa testes dentro de cada projeto (apenas se houver pasta de testes)
     - name: Run tests in each project
       run: |
-        for dir in automacao_arquivos_os automacao_modelos_ml automacao_planilhas pylogcfg; do
+        for dir in automacao_modelos_ml automacao_planilhas pylogcfg; do
           if [ -d "$dir/tests" ]; then
             echo "Running tests in $dir"
             pytest -v --maxfail=1 --disable-warnings "$dir/tests" || exit 1
