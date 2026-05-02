@@ -1,8 +1,8 @@
 ﻿# 🐍 Portfólio Python | Python Portfolio
 ![Python Tests](https://github.com/taciodewes/portfolio_python/actions/workflows/python-tests.yaml/badge.svg)
 
-Repositório com projetos de automação, análise de dados e inteligência artificial desenvolvidos em **Python**.
-Cada projeto demonstra a aplicação prática de conceitos de **Data Science**, **Machine Learning**, **automação** e **boas práticas de engenharia de software**.
+Repositório com projetos de automação, integração de sistemas e desenvolvimento backend em **Python**.
+Cada projeto demonstra a aplicação prática de **automação**, **integração de sistemas** e **boas práticas de engenharia de software** em cenários reais.
 
 ---
 
@@ -46,8 +46,7 @@ Tenho experiência consolidada em **ERPs**, **migração de sistemas legados**, 
 | Projeto | Descrição | Repositório |
 |----------|------------|-------------|
 | 🧾 **Automação de Planilhas** | Geração automatizada de relatórios e gráficos em Excel e HTML, com interface gráfica, voltada para automação de rotinas operacionais e análise de dados. |
-| 🤖 **Automação de Modelos de Machine Learning** | Pipeline automatizado para criação, avaliação e persistência de modelos de machine learning, com foco em reprodutibilidade e organização de experimentos. |
-| 📂 **File Organizer** | Automação para organização de arquivos baseada em regras, simulando cenários reais de padronização e gestão de dados. |
+| 🤖 **Pipeline de Processamento de Dados e Automação** | Pipeline automatizado para criação, avaliação e persistência de modelos de machine learning, com foco em reprodutibilidade e organização de experimentos. |
 | 🐍 **pylogcfg** | Biblioteca de logging estruturado com suporte a processamento assíncrono (QueueHandler/QueueListener) e saída em JSON, voltada para aplicações distribuídas e ambientes de produção. |
 
 *(Novos projetos serão adicionados aqui conforme publicados.)*
